@@ -76,8 +76,8 @@ div.wrapperContent {
 }
 @media (max-width: 600px)  {
 	div.photoContainer{
-		width:50px;
-		height:50px;
+		width:40px;
+		height:40px;
 	}
 }
 @media (min-width: 1200px) and (orientation: landscape){
@@ -105,12 +105,26 @@ div.wrapperContent {
 @media (min-height: 1200px) and (orientation: portrait){
 	.result{
 		width:80%;
-	
 	}
 	.city{
 		font-size: 35px;
 	}
 	.text p{
 		font-size:20px;
+	}
+}
+@media all and (max-height: 550px), (max-width:480) and  (orientation: landscape) {
+	.city{
+		font-size: 15px;
+	}
+	.result{
+		height:80%;
+	}
+	div.text p,div.text span{
+		font-size:9px;
+	}
+	
+	.wrapperContent{
+		flex-direction: row;
 	}
 }
