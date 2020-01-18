@@ -41,7 +41,9 @@ div.wrapperContent {
 	display: flex;
 	position: relative;
 	justify-content: space-around;
+	flex-wrap:wrap;
 }
+
 @media (max-width: 800px) {
 	.result {
 		margin-top: 3vh;
@@ -70,5 +72,45 @@ div.wrapperContent {
 		padding: 20px;
 		width: 40%;
 		height: 100%;
+	}
+}
+@media (max-width: 600px)  {
+	div.photoContainer{
+		width:50px;
+		height:50px;
+	}
+}
+@media (min-width: 1200px) and (orientation: landscape){
+	.result{
+		width:40%;
+		height:70%;
+	}
+}
+@media (max-height: 500px) and (orientation: landscape){
+	div.text p,
+	span {
+		font-size: 13px;
+	}
+	.city{
+		font-size:19px;
+	}
+	.photoContainer{
+		width:50px;
+		height:50px;
+	}
+	.result{
+		width:90%;
+	}
+}
+@media (min-height: 1200px) and (orientation: portrait){
+	.result{
+		width:80%;
+	
+	}
+	.city{
+		font-size: 35px;
+	}
+	.text p{
+		font-size:20px;
 	}
 }

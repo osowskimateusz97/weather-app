@@ -50,3 +50,8 @@
 		margin-bottom: 15px;
 	}
 }
+@media (min-width: 700px) and (orientation: landscape) {
+	.app{
+		height:70vh;
+	}
+}
